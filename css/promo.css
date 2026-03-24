@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F1EB;
+}
+
+.promo {
+    padding-bottom: 28px;
+    background-color: #F7F1EB;
+    max-width: 411px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.promo__row {
+    margin-bottom: 24px;
+}
+
+.promo__col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #A1764C;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 4px solid #D9B78F;
+    border-top: none;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.promo__col__text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Inter Tight, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.promo__col__image {
+    width: 16px;
+    height: 16px;
+}
+
+.promo__title {
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 1.05;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #111111;
+}
+
+.promo__title__span {
+    background-color: #A1764C;
+    color: #FFFFFF;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.promo__info {
+    position: relative;
+    min-height: 330px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 22px;
+    background-image: url(../images/promo/buld.png);
+    background-repeat: no-repeat;
+    background-position: right 8px bottom;
+    background-size: 260px auto;
+}
+
+.promo__info__title {
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 100%;
+    margin-bottom: 14px;
+    color: #111111;
+}
+
+.promo__info__col {
+    max-width: 215px;
+}
+
+.promo__info__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.promo__info__image {
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.promo__info__text {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.45;
+    color: #1C1C1C;
+}
+
+.promo__info__text b {
+    font-weight: 800;
+}
+
+.promo__timer {
+    position: absolute;
+    right: 26px;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.promo__timer__item,
+.promo__timer__dots {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    background-color: #7C5B31;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-family: Inter Tight, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 100%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.promo__timer__item {
+    min-width: 45px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.promo__timer__dots {
+    min-width: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.promo__btn {
+    display: block;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #FF4C4C 0%, #F53636 100%);
+    box-shadow: 0 7px 0 #982828;
+    text-decoration: none;
+    text-align: center;
+    font-family: Inter Tight, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.promo__bottom {
+    position: relative;
+    padding-left: 28px;
+    padding-right: 20px;
+    min-height: 90px;
+}
+
+.promo__bottom__text {
+    max-width: 300px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.45;
+    color: #111111;
+}
+
+.promo__bottom__arrow {
+    position: absolute;
+    right: 4px;
+    bottom: -8px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 999;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal__content {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 28px 20px 24px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    border: none;
+    background: transparent;
+    font-size: 34px;
+    line-height: 1;
+    color: #111111;
+    cursor: pointer;
+}
+
+.modal__title {
+    margin-bottom: 18px;
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    color: #111111;
+}
+
+#modalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.modal__input {
+    width: 100%;
+    padding: 16px 18px;
+    border: 1px solid #D9B78F;
+    border-radius: 14px;
+    outline: none;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #111111;
+    background-color: #F7F1EB;
+}
+
+.modal__input::placeholder {
+    color: #777777;
+}
+
+.modal__submit {
+    width: 100%;
+    padding: 16px 18px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #FF4C4C 0%, #F53636 100%);
+    font-family: Inter Tight, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media (max-width: 430px) {
+    .promo__title {
+        font-size: 33px;
+    }
+
+    .promo__info {
+        min-height: 300px;
+        background-size: 230px auto;
+        background-position: right 0 bottom 14px;
+    }
+
+    .promo__info__col {
+        max-width: 205px;
+    }
+
+    .promo__timer {
+        right: 22px;
+        bottom: 12px;
+    }
+
+    .promo__btn {
+        font-size: 23px;
+    }
+
+    .promo__bottom__text {
+        max-width: 250px;
+    }
+
+    .modal__content {
+        padding: 26px 16px 20px;
+    }
+
+    .modal__title {
+        font-size: 26px;
+    }
+}

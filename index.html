@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piskent Taqdimot</title>
+<link rel="stylesheet" href="./css/main.css">
+<style>
+/* ===== Modal CSS ===== */
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="piskent">
+        <div class="piskent__row">
+            <div class="piskent__col">
+                <img class="piskent__col__image" src="./images/img/building.svg" alt="">
+                <img class="piskent__image" src="./images/img/piskentCity.svg" alt="">
+            </div>
+            <div class="piskent__col">
+                <p class="piskent__col__text"><img src="./images/img/calendar.svg" alt="calendar logo">27-Mart</p>
+                <p class="piskent__col__text"><img src="./images/img/time.svg" alt="time logo">Soat: 20:00</p>
+            </div>
+        </div>
+
+        <h2 class="piskent__title">10 yillik tajribaga ega quruvchilar <span class="piskent__title__span">endi piskentda!</span></h2>
+        <p class="piskent__text">Yopiq taqdimotga qo’shiling</p>
+        <img class="piskent__imageses" src="./images/img/buldings.png" alt="">
+
+        <!-- Birinchi tugma -->
+        <button class="piskent__info__btn openModalBtn">Taqdimotga qo’shilish</button>
+
+        <p class="piskent__info__text">Uylar haqida to’liq malumot olish uchun <br> yopiq <span class="piskent__text__span">Telegram kanalga qo’shiling</span></p>
+        <img class="piskent__info__vektor" src="./images/img/vektor.png" alt="">
+
+        <h3 class="piskent__info__time" id="timer">01:58</h3>
+
+        <h3 class="piskent__info__title">Loyiha qulayliklari</h3>
+
+        <div class="piskent__main">
+            <div class="piskent__main__col">
+                <div class="piskent__main__col">
+                   <img class="piskent__main__col__image" src="./images/img/group.png" alt=""> 
+                   <p class="piskent__main__col__text">Farzandingiz uchun <br> <span class="piskent__main__col__span">Maktab</span> va <span class="piskent__main__col__span">Bog’cha</span></p>
+                </div>
+            </div>
+            <div class="piskent__main__col">
+                <div class="piskent__main__col">
+                   <img class="piskent__main__col__image" src="./images/img/build group.png" alt=""> 
+                   <p class="piskent__main__col__text"><span class="piskent__main__col__span">Shahar markazidagi</span> uylar <br> kabi sharoitlarga ega</p>
+                </div>
+            </div>
+            <div class="piskent__main__col">
+                <div class="piskent__main__col">
+                   <img class="piskent__main__col__image" src="./images/img/paper.png" alt=""> 
+                   <p class="piskent__main__col__text"><span class="piskent__main__col__span">Boshlang’ich to’lovsiz</span> oyiga <br> 3 mln 800 ming so’mdan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ikkinchi tugma -->
+        <button class="piskent__last__btn openModalBtn">Taqdimotga qo’shilish</button>
+    </div>
+</div>
+
+<!-- ===== Modal ===== -->
+<div id="modal" class="modal">
+    <div class="modal__content">
+        <span id="closeModal" class="modal__close">&times;</span>
+        <h2>Ro'yxatdan o'tish</h2>
+        <form id="modalForm">
+            <input type="text" placeholder="Ismingiz" required>
+            <input type="tel" placeholder="Telefon raqamingiz" required pattern="[0-9]{9,15}" title="Faqat raqam kiriting">
+            <button type="submit">Jo'natish</button>
+        </form>
+    </div>
+</div>
+
+<script src="./js/app.js"></script>
+<script src="./js/modal.js"></script>
+</body>
+</html>

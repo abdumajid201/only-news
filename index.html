@@ -6,7 +6,7 @@
 <title>Piskent Taqdimot</title>
 <link rel="stylesheet" href="./css/main.css">
 <style>
-/* ===== Modal CSS ===== */
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap'); * { margin: 0; padding: 0; box-sizing: border-box; } /* @font-face { font-family: SF Pro Display; src: url(../fonts/sf-pro-display.zip); font-display: swap; font-weight: 400; } @font-face { font-family: Cabrito Contrast; src: url(../fonts/Setup.exe); font-display: swap; font-weight: 400; } */ body { background-color: #4A3812; font-family: sf-pro-display; } .piskent { padding-top: 16px; max-width: 420px; margin: 0 auto; padding-left: 20px; padding-right: 20px; padding-bottom: 41px; position: relative; } .piskent__row { padding-left: 16px; padding-top: 7px; padding-bottom: 9px; padding-right: 16px; background-color: #FFFFFF; border-radius: 10px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; } .piskent__col { display: flex; align-items: center; gap: 8px; } .piskent__col__image { max-width: 31px; width: 100%; } .piskent__image { max-width: 107px; width: 100%; } .piskent__col__text { font-family: SF Pro Display; display: flex; align-items: center; gap: 4px; font-weight: 400; font-size: 14px; line-height: 100%; color: #000000; } .piskent__title { font-family: Cabrito Contrast; font-weight: 500; font-size: clamp(24px, 6vw, 36px); line-height: 120%; text-transform: uppercase; color: #FFFFFF; margin-bottom: 4px; } .piskent__title__span { font-family: Cabrito Contrast; font-weight: 500; font-size: clamp(24px, 6vw, 36px); line-height: 120%; letter-spacing: -2%; text-transform: uppercase; background: linear-gradient(90deg, #FFD287 0%, #FFE7AB 50%, #FFD287 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; } .piskent__text { font-family: SF Pro Display, sans-serif; font-weight: 400; font-size: 16px; line-height: 100%; letter-spacing: 0%; color: #FFFFFF; margin-bottom: 16.23px; } .piskent__imageses { margin-bottom: 16px; width: 100%; } .piskent__info__btn { padding-top: 33px; padding-bottom: 34px; padding-left: 24px; padding-right: 24px; background: linear-gradient(93.1deg, #FFCA85 -12.09%, #FDE7CA 51.33%, rgba(255, 189, 103, 0.99) 101.95%); box-shadow: 0px 0px 21.93px 0px #FFEF9A24 inset; box-shadow: 0px 0px 41.23px 0px #FFD84E33; box-shadow: 0px 4px 0px 0px #B3884E; align-items: center; display: flex; font-family: Inter; font-weight: 600; font-size: clamp(16px, 4vw, 22px); line-height: 100%; letter-spacing: 5%; text-transform: uppercase; border-radius: 10px; border: none; color: #685031; margin-bottom: 14px; cursor: pointer; width: 100%; text-align: center; display: flex; align-items: center; justify-content: center; } .piskent__info__text { font-weight: 400; font-size: 16px; line-height: 130%; color: #FFFFFF; font-family: sans-serif; margin-bottom: 24px; } .piskent__text__span { font-family: SF Pro Display, sans-serif; font-weight: 700; font-size: 16px; line-height: 130%; } .piskent__info__vektor { position: absolute; right: 60px; top: 660px; } .piskent__info__time { font-family: Cabrito Contrast; font-weight: 400; font-size: 36px; line-height: 100%; text-transform: uppercase; text-align: center; color: #FFFFFF; margin-bottom: 16px; } .piskent__info__title { font-family: Cabrito Contrast; font-weight: 500; font-size: 32px; line-height: 100%; text-transform: uppercase; color: #FFFFFF; margin-bottom: 8px; } .piskent__main { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; } .piskent__main__col__image { background-color: #15495E; border-radius: 10px; } .piskent__main__col { background-color: #FFFFFF; display: flex; align-items: center; gap: 8px; padding-top: 7px; padding-bottom: 7px; padding-left: 7px; border-radius: 15px; } .piskent__main__col__text { font-family: SF Pro Display, sans-serif; font-weight: 400; font-size: 16px; line-height: 150%; vertical-align: middle; color: #000000; } .piskent__main__col__span { font-weight: 700; font-style: Bold; font-size: 16px; line-height: 150%; vertical-align: middle; } .piskent__last__btn { background: linear-gradient(93.1deg, #FFCA85 -12.09%, #FDE7CA 51.33%, rgba(255, 189, 103, 0.99) 101.95%); box-shadow: 0px 0px 21.93px 0px #FFEF9A24 inset; box-shadow: 0px 0px 41.23px 0px #FFD84E33; box-shadow: 0px 4px 0px 0px #B3884E; padding-top: 33px; padding-bottom: 33px; max-width: 420px; width: 100%; border-radius: 10px; border: none; font-family: Inter, sans-serif; font-weight: 600; font-size: clamp(16px, 4vw, 22px); line-height: 100%; letter-spacing: 5%; text-transform: uppercase; color: #685031; cursor: pointer; } .modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; padding: 20px; background-color: rgba(0, 0, 0, 0.55); z-index: 999; } .modal.show { display: flex; } .modal__content { position: relative; width: 100%; max-width: 380px; padding: 28px 20px 24px; border-radius: 20px; background-color: #FFFFFF; box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2); } .modal__close { position: absolute; top: 10px; right: 14px; border: none; background: transparent; font-size: 34px; line-height: 1; color: #111111; cursor: pointer; } .modal__title { margin-bottom: 18px; font-family: Bebas Neue, sans-serif; font-weight: 400; font-size: 30px; line-height: 1; text-align: center; color: #111111; } #modalForm { display: flex; flex-direction: column; gap: 14px; } .modal__input { width: 100%; padding: 16px 18px; border: 1px solid #D9B78F; border-radius: 14px; outline: none; font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 1.2; color: #3F2D12; background-color: #FBF5EC; } .modal__input::placeholder { color: #9A7A4B; } .modal__submit { width: 100%; padding: 16px 18px; border: none; border-radius: 14px; background: linear-gradient(93.1deg, #FFCA85 -12.09%, #FDE7CA 51.33%, rgba(255, 189, 103, 0.99) 101.95%); box-shadow: 0px 4px 0px 0px #B3884E; font-family: Inter, sans-serif; font-weight: 700; font-size: 18px; line-height: 1; text-transform: uppercase; color: #685031; cursor: pointer; } .piskent__info__btn, .piskent__last__btn { color: #fff; border: none; border-radius: 5px; cursor: pointer; margin: 10px 0; color: #685031; } .piskent__info__btn:hover, .piskent__last__btn:hover { }
 
 </style>
 </head>
@@ -28,7 +28,6 @@
         <p class="piskent__text">Yopiq taqdimotga qo’shiling</p>
         <img class="piskent__imageses" src="./images/img/buldings.png" alt="">
 
-        <!-- Birinchi tugma -->
         <button class="piskent__info__btn openModalBtn">Taqdimotga qo’shilish</button>
 
         <p class="piskent__info__text">Uylar haqida to’liq malumot olish uchun <br> yopiq <span class="piskent__text__span">Telegram kanalga qo’shiling</span></p>
@@ -59,25 +58,24 @@
             </div>
         </div>
 
-        <!-- Ikkinchi tugma -->
         <button class="piskent__last__btn openModalBtn">Taqdimotga qo’shilish</button>
     </div>
 </div>
 
-<!-- ===== Modal ===== -->
 <div id="modal" class="modal">
     <div class="modal__content">
-        <span id="closeModal" class="modal__close">&times;</span>
-        <h2>Ro'yxatdan o'tish</h2>
-        <form id="modalForm">
-            <input type="text" placeholder="Ismingiz" required>
-            <input type="tel" placeholder="Telefon raqamingiz" required pattern="[0-9]{9,15}" title="Faqat raqam kiriting">
-            <button type="submit">Jo'natish</button>
+        <button class="modal__close" id="closeModal" type="button">&times;</button>
+        <h3 class="modal__title">Ro‘yxatdan o‘tish</h3>
+
+        <form action="" id="modalForm">
+            <input type="text" id="nameInput" placeholder="Ismingizni kiriting" class="modal__input">
+            <input type="text" id="phoneInput" placeholder="+998 (__) ___-__-__" class="modal__input">
+            <button class="modal__submit" type="submit">Yuborish</button>
         </form>
     </div>
 </div>
 
 <script src="./js/app.js"></script>
-<script src="./js/modal.js"></script>
+<script src="./js/promo.js"></script>
 </body>
 </html>
